@@ -1,0 +1,4 @@
+>> openssl genrsa -out kepair.pem 2048 //generates a keypair key
+>> openssl rsa -in kepair.pem -pubout -out public.pem //generates a public key
+>> openssl pkcs8 -topk8 -inform PEM -outform PEM -nocrypt -in kepair.pem -out private.pem //generates a private key
+ //now delete keypair.pem
